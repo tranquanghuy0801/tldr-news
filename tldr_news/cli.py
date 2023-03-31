@@ -1,6 +1,7 @@
+import click
 from textual.app import App, ComposeResult
 from textual.widgets import Static, Button, Header, Footer
-from utils import get_content_by_day, get_days
+from tldr_news.utils import get_content_by_day, get_days
 
 
 class Sidebar(Static):
@@ -31,6 +32,11 @@ class TLDRNewsApp(App):
         yield Footer()
 
 
-if __name__ == "__main__":
+@click.command()
+def cli():
     app = TLDRNewsApp()
     app.run()
+
+
+if __name__ == "__main__":
+    cli()

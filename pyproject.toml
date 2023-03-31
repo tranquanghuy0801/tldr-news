@@ -14,7 +14,7 @@ beautifulsoup4 = "^4.11.2"
 textual = "^0.15.1"
 
 [tool.poetry.scripts]
-tldr_news = "tldr_news.cli:main"
+tldr_news = "tldr_news.cli:cli"
 
 
 [build-system]
