@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "tldr-news"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["Harry Tran <huytran.quang080199@gmail.com>"]
 readme = "README.md"
@@ -16,6 +16,8 @@ textual = "^0.15.1"
 [tool.poetry.scripts]
 tldr_news = "tldr_news.cli:cli"
 
+[console_scripts]
+tldr_news = "tldr_news.cli:cli"
 
 [build-system]
 requires = ["poetry-core"]
