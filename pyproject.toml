@@ -18,6 +18,7 @@ tldr_news = "tldr_news.cli:cli"
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^6.0.0"
+python-semantic-release = "^7.33.2"
 
 [console_scripts]
 tldr_news = "tldr_news.cli:cli"
@@ -32,6 +33,10 @@ version_variable = [
     "pyproject.toml:version"
 ]
 branch = "main"
-upload_to_pypi = true
-upload_to_release = true
-build_command = "pip install poetry && poetry build"
+changelog_file = "CHANGELOG.md"             # changelog file
+build_command = "poetry build"              # build dists
+dist_path = "dist/"                         # where to put dists
+upload_to_release = true                    # auto-create GitHub release
+upload_to_pypi = false                      # don't auto-upload to PyPI
+remove_dist = false                         # don't remove dists
+patch_without_tag = true                    # patch release by default
