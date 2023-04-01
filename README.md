@@ -2,7 +2,7 @@
 
 This is a simple terminal application that shows the latest tech news headlines from the [TLDR Newsletter](https://tldr.tech/).
 
-The application is written in Python and uses the [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) library to parse the HTML content of the newsletter.
+The application is written in Python, uses the [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) library to parse the HTML content of the newsletter and uses [Textual](textual.textualize.io/) library to render the content in the terminal.
 
 ![Preview App](images/preview-app.png)
 

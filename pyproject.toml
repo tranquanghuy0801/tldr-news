@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "tldr-news"
-version = "0.1.1"
+version = "0.0.0"
 description = ""
 authors = ["Harry Tran <huytran.quang080199@gmail.com>"]
 readme = "README.md"
@@ -32,6 +32,6 @@ version_variable = [
     "pyproject.toml:version"
 ]
 branch = "main"
-upload_to_pypi = false
+upload_to_pypi = true
 upload_to_release = true
 build_command = "pip install poetry && poetry build"
