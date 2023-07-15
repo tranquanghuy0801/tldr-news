@@ -22,20 +22,16 @@ def get_content_by_day(day: str):
     list_contents = soup.find_all("div", class_="mt-3")
     header_index = 0
     output = ""
-    output += title.contents[0] + "\n\n"
-    output += summary.contents[0] + "\n\n"
+    output += f"{title.contents[0]} \n\n summary.contents[0] \n\n}"
     news_index = 1
     for list_content in list_contents[1:]:
         if list_content.find("h3"):
-            output += str(news_index) + ". " + \
-                list_content.find("h3").contents[0] + "\n"
-            output += '-' * 50 + "\n"
+            output += str(news_index) + ". " + list_content.find("h3").contents[0] + "\n" + '-' * 50 + "\n"
             news_index += 1
-        else:
-            if header_index < len(headers):
-                output += headers[header_index] + "\n\n"
-                header_index += 1
-                news_index = 1
+        elif header_index < len(headers):
+            output += headers[header_index] + "\n\n"
+            header_index += 1
+            news_index = 1
         if list_content.find("div"):
             print(list_content.find("div"))
             output += list_content.find("div").contents[0] + "\n\n"
