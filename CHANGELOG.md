@@ -2,6 +2,9 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.1 (2023-07-15)
+
+
 ## v0.2.0 (2023-04-01)
 ### Feature
 * Force major update version ([`c558b37`](https://github.com/tranquanghuy0801/tldr-news/commit/c558b376876e5f1a568772c14b4da876033a6c9f))
