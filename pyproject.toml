@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "tldr-news"
-version = "0.2.11"
+version = "0.2.12"
 description = ""
 authors = ["Harry Tran <huytran.quang080199@gmail.com>"]
 readme = "README.md"
